@@ -13,7 +13,9 @@ import tech.ada.java.gerenciamento.repository.RoomRepository;
 import java.util.List;
 import java.util.Optional;
 
-//Todo Delete, Patch e return do Put -ROOM e Guest
+//Todo:
+// Delete, Patch e return do Put -ROOM e Guest
+// Get by filters.
 @RestController("/rooms")
 public class RoomController {
     private final RoomRepository roomRepository;
@@ -56,8 +58,6 @@ public class RoomController {
 
             return ResponseEntity.ok(saveRoom);
         }
-        return null ; //Eu não quis implementar o "Else"
-
+        return null ; //Eu não quis implementar o "Else"git
     }
-
 }
